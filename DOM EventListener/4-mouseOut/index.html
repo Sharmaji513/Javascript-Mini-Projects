@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      h1{
+           
+            color: brown;
+        }
+       
+    </style>
+    <title>Mouse over Event </title>
+</head>
+<body>
+    
+
+    <h1>MouseOut Event listener</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, omnis. Beatae necessitatibus inventore officia magni, harum corrupti. Quis quae optio velit atque eius amet placeat iste commodi nisi nihil, repellendus voluptatibus rem pariatur laboriosam? Excepturi quasi veniam dolores odit aliquid hic error quam iusto quod totam, eum tenetur ipsum amet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolorem consequatur corrupti iusto, atque exercitationem quo quidem, dolor voluptatum aut eum quos! Quibusdam nihil eius sit, doloribus labore optio nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquid excepturi dolores optio ipsam velit reprehenderit recusandae accusamus, temporibus magni, autem unde vitae quibusdam, vel nihil commodi! Quas, distinctio odit.</p>
+
+
+    <script>
+        const paraElement = document.getElementById("para")
+
+        paraElement.addEventListener("mouseout" , () =>{
+            alert("you left the safe zone 🙅 (mouse out event working properly)");
+        })
+    
+   
+    </script>
+</body>
+
+
+
+
+</html>

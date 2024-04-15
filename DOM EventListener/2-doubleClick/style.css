@@ -1,0 +1,19 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  #box {
+    width: 15rem;
+    background-color:blueviolet;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 25px;
+    text-transform: uppercase;
+    
+  }
