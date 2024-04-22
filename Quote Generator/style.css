@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+  }
+ 
+body{
+  
+    background: rgba(178, 220, 178, 0.551);
+  
+}
+
+.quote-container{
+  
+   transform: translate(-50% , -50%);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   text-align: center;
+   width: 700px;
+    background-color:#fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25) ;
+    background-color: white;
+}
+
+
+.heading{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quote-container h1::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    background: rgb(23,124,229);
+    border-radius: 3px;
+    position: relative;
+   
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+   
+}
+
+.quotes{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.quote-container .quotes::before , .quote-container .quotes::after{
+    content: '"';
+
+}
+
+.author{
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+
+.author::before{
+    content: '-';
+    width: 20px;
+    height: 2px;
+    background:rgb(23,124,229);
+    position: relative;
+    top: -7px;
+    left: -10px;
+    transform: translateY(-50%);
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button{
+    margin-top: 50px;
+    border: none;
+    outline: none;
+    /* padding: 20px 40px; */
+    width: 150px;
+    height: 50px;
+    background-color: rgb(23,124,229);
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.quotes-btn:hover{
+   background-color: rgb(22, 112, 209);
+
+}
+
+.tweet{
+    background-color:#fff;
+    color: black;
+    border: 1px solid rgb(23,124,229);
+}
+
+.tweet:hover{
+    border: 1px solid black;
+}
+
+.tweet i{
+    font-size: 25px;
+    margin-right: 10px;
+}
