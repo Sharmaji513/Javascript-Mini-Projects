@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(76, 4, 143);
+  /* background-color: rgb(76, 4, 143); */
+  background: #201f21
 }
 
 .container {
@@ -38,4 +39,14 @@
   width: 35px;
   height: 20px;
   background-color: transparent;
+}
+
+.passLength{
+  position: absolute;
+  bottom: -30px;
+  left: 0px;
+  color: #fff;
+  font-size: 15px;
+  display: none;
+  font-weight: 800px;
 }
