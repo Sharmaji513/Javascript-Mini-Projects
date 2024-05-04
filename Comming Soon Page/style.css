@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Poppins", sans-serif;
+
+  font-weight: 400;
+  line-height: 1.7;
+  color: #fff;
+}
+
+.logo {
+  width: 120px;
+  padding: 20px 0;
+  margin: 0 120px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: url("https://cdn.svgator.com/images/2022/06/use-svg-as-background-image-particle-strokes.svg");
+  background-position: center;
+  /* background-size: cover; */
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 8%;
+}
+
+.content h1 {
+  font-size: 64px;
+  font-family: 600;
+  margin-bottom: -16px;
+}
+
+.content span {
+  color: #ff3753;
+}
+
+.content button {
+  border: none;
+  outline: none;
+  padding: 12px 25px;
+  color: #fff;
+  background: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+}
+
+.content button:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.content p {
+  font-size: 20px;
+}
+
+.launch-time {
+  display: flex;
+
+  margin-bottom: 18px;
+}
+
+.launch-time div {
+  flex-basis: 100px;
+}
+
+.launch-time p {
+  font-size: 50px;
+  margin-bottom: -22px;
+}
+
+.launch-time span {
+  font-size: 16px;
+  color: yellow;
+}
+
+.rocket {
+  width: 250px;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: 105%;
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        text-align: center;
+    }
+
+  .container {
+    /* padding: 20px; */
+    text-align: center;
+   
+  }
+
+ 
+
+  .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    padding: 0 10%;
+    text-align: center;
+  
+  }
+
+  .content h1 {
+    
+    font-size: 35px;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+
+  .content p {
+    font-size: 14px;
+    margin-bottom: 2px;
+    margin-bottom: 6px;
+  }
+
+  .content button {
+    margin: 0 auto;
+    padding: 8px 10px;
+  }
+
+
+  .launch-time p {
+    font-size: 25px;
+    margin-bottom: -12px;
+  }
+
+  .launch-time span {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .launch-time div {
+    flex-basis: 80px;
+    
+  }
+  
+  .rocket{
+    width: 150px;
+    text-align: center;
+  }
+}
